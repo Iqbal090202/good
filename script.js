@@ -41,10 +41,10 @@ function tulis() {
     hour = today.getHours();
     if (hour >= 6 && hour <= 11) {
         text = `Morning, Didit`
-    } else if (hour >= 12 && hour <= 18) {
-        text = "Afternoon, Didit"
+    } else if (hour >= 12 && hour <= 17) {
+        text = `Afternoon, Didit`
     } else {
-        text = `Evening, <span class="nama">Didit</span>`
+        text = `Evening, Didit`
         $(".nama").css('color', 'blue')
     }
 
@@ -53,7 +53,11 @@ function tulis() {
         $('body').css('background', '#f1ede3')
         $("#fullpage").removeClass("night")
     } else {
-        $("#myAudio").attr("src", `lagu.mp3`)
+        if (hour >= 18 && hour <= 21) {
+            $("#myAudio").attr("src", `oneonly.mp3`)
+        } else {
+            $("#myAudio").attr("src", `lagu.mp3`)
+        }
         $('body').css('background', '#080d17')
         $("#fullpage").addClass("night")
     }
