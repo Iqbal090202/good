@@ -40,7 +40,7 @@ function tulis() {
     today = new Date();
     hour = today.getHours();
     if (hour >= 6 && hour <= 11) {
-        text = `Morning, Didit`
+        text = `Morning, Teman-temankuh`
     } else if (hour >= 12 && hour <= 17) {
         text = `Afternoon, Didit`
     } else {
