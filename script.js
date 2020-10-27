@@ -42,9 +42,9 @@ function tulis() {
     if (hour >= 6 && hour <= 11) {
         text = `Morning, Teman-temankuh`
     } else if (hour >= 12 && hour <= 17) {
-        text = `Afternoon, Didit`
+        text = `Afternoon, Teman-temankuh`
     } else {
-        text = `Evening, Didit`
+        text = `Evening, Teman-temankuh`
         $(".nama").css('color', 'blue')
     }
 
